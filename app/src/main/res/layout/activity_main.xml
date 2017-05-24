@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.utpl.biorecolector.MainActivity">
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/fondo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+        <LinearLayout
+            android:layout_marginTop="90dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/bt1"
+                    android:background="@mipmap/ic_nuevo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nuevo"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/bt2"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/ic_sinc"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sincronozar"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/bt3"
+                    android:background="@mipmap/ic_listar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/listar"
+                    android:textAlignment="center"/>
+                <Button
+                    android:id="@+id/bt4"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/ic_camara"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camara"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/bt5"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="Información del proyecto"/>
+
+    </RelativeLayout>

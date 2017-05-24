@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Biorecolector</string>
+    <string name="informacion">INFORMACION DEL PROYECTO</string>
+    <string name="nuevo">NUEVA MUESTRA</string>
+    <string name="listar">LISTAR MUESTRA</string>
+    <string name="sincronozar">SINCRONIZAR</string>
+    <string name="camara">CAPTURAR MUESTRA</string>
+    <string name="title_activity_nuevo">Nueva Muestra</string>
+</resources>
