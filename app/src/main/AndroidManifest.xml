@@ -19,6 +19,10 @@
         <activity
             android:name=".nuevo"
             android:label="@string/title_activity_nuevo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listar"
+            android:label="@string/title_activity_listar"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

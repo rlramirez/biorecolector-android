@@ -7,17 +7,25 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_listar;
+    Button btn_listar, btn_nuevo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_listar=(Button) findViewById(R.id.bt1);
+        btn_nuevo=(Button) findViewById(R.id.bt1);
+        btn_listar=(Button) findViewById(R.id.bt3);
 
-        btn_listar.setOnClickListener(new View.OnClickListener(){
+        btn_nuevo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this,nuevo.class);
+                startActivityForResult(intent,0);
+            }
+        });
+        btn_listar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this,listar.class);
                 startActivityForResult(intent,0);
             }
         });

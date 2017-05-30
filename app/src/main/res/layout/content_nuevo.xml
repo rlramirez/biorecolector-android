@@ -7,6 +7,11 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.utpl.biorecolector.nuevo"
     tools:showIn="@layout/activity_nuevo">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
 
     <LinearLayout
         android:layout_width="368dp"
@@ -26,36 +31,59 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Parametors Fisicos"
+                android:textAlignment="center"/>
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="Name" />
+                android:hint="Color"
+                android:inputType="number" />
 
-            <TextView
-                android:id="@+id/textView1"
+            <EditText
+                android:id="@+id/editText3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/nuevo"
-                android:textAlignment="center" />
+                android:ems="10"
+                android:hint="Turbiedad"
+                android:inputType="number|numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ph"
+                android:inputType="number|numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Temperatura"
+                android:inputType="number|numberDecimal" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Conductividad"
+                android:inputType="number|numberDecimal" />
+
 
             <Button
-                android:id="@+id/bt2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:id="@+id/bt5"
+                android:textColor="#fff"
                 android:layout_marginTop="20dp"
-                android:background="@mipmap/ic_sinc" />
-
-            <TextView
-                android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sincronozar"
-                android:textAlignment="center" />
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                android:text="Guardar muestra"/>
         </LinearLayout>
 
         <LinearLayout
@@ -65,20 +93,99 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/bt3"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/ic_listar" />
-
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/listar"
+                android:text="Parametros Quimicos"
                 android:textAlignment="center" />
 
-            <Button
+            <EditText
+                android:id="@+id/editText33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="STD"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Aluminio"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText331"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cobre"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cloro libre residual"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fosfatos"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fluoruros"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Hierro Total"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Manganeso"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nitratos"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nitritos"
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nitrógeno Amoniacal "
+                android:inputType="number|numberDecimal" />
+            <EditText
+                android:id="@+id/editText42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sulfatos"
+                android:inputType="number|numberDecimal" />
+
+            <!--<Button
                 android:id="@+id/bt4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -90,7 +197,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/camara"
-                android:textAlignment="center" />
+                android:textAlignment="center" />-->
         </LinearLayout>
+
     </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
