@@ -7,8 +7,11 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class listar extends AppCompatActivity {
     ListView lista;
@@ -28,9 +31,27 @@ public class listar extends AppCompatActivity {
 
         lista = (ListView)findViewById(R.id.listado);
 
-        adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
+        adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, valores);
 
         lista.setAdapter(adaptador);
+
+        //Evento que se disparará al pulsar en un elemento de la lista
+        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView< ?> arg0, View arg1, int arg2,
+                                    long arg3) {
+
+                ListAdapter la = (ListAdapter) arg0.getAdapter();
+
+                Toast.makeText(
+                        arg1.getContext()
+                        ,la.getItem(arg2).toString()
+                        ,Toast.LENGTH_LONG)
+                        .show();
+
+            };
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
