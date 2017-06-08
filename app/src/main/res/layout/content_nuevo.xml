@@ -35,7 +35,7 @@
                 android:textAlignment="center"/>
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/txtcolor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -43,7 +43,7 @@
                 android:inputType="number" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/txtturbiedad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -51,7 +51,7 @@
                 android:inputType="number|numberDecimal" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/txtph"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -59,7 +59,7 @@
                 android:inputType="number|numberDecimal" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/txttemperatura"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -67,7 +67,7 @@
                 android:inputType="number|numberDecimal" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/txtconductividad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -101,88 +101,83 @@
                 android:textAlignment="center" />
 
             <EditText
-                android:id="@+id/editText33"
+                android:id="@+id/txtstd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="STD"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText333"
+                android:id="@+id/txtaluminio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Aluminio"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText331"
+                android:id="@+id/txtcobre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Cobre"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText34"
+                android:id="@+id/txtcloro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Cloro libre residual"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText35"
+                android:id="@+id/txtfosfatos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Fosfatos"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText36"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Fluoruros"
-                android:inputType="number|numberDecimal" />
-            <EditText
-                android:id="@+id/editText37"
+                android:id="@+id/txthierro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Hierro Total"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText38"
+                android:id="@+id/txtmanganeso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Manganeso"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText39"
+                android:id="@+id/txtnitratos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Nitratos"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText41"
+                android:id="@+id/txtnitritos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Nitritos"
                 android:inputType="number|numberDecimal" />
+
             <EditText
-                android:id="@+id/editText40"
+                android:id="@+id/txtnitrogeno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Nitrógeno Amoniacal "
-                android:inputType="number|numberDecimal" />
-            <EditText
-                android:id="@+id/editText42"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Sulfatos"
                 android:inputType="number|numberDecimal" />
 
             <!--<Button
